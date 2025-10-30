@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Safeguarding Awareness</title>
 
   <!-- Bootstrap CSS -->
@@ -12,106 +12,115 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!--external CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <!-- ====== NAVIGATION BAR ====== -->
+
+  <!-- Nvigation bar -->
   <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#key-info">Key Information</a>
+    <a href="#key-info">Key information</a>
     <a href="#action">Take Action</a>
     <a href="#contact">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
-  <!-- ====== SLIDESHOW SECTION ====== -->
+  <!-- My Slideshow-->
   <section id="home">
     <div class="slideshow-container" data-slideshow="hero" data-interval="4000">
-      <div class="mySlides fade"><img src="assets/images/img1.jpg" alt="Safeguarding community support"></div>
-      <div class="mySlides fade"><img src="assets/images/img2.png" alt="Team meeting for safeguarding awareness"></div>
-      <div class="mySlides fade"><img src="assets/images/safe3.jpg" alt="Children learning safely"></div>
-
-      <button class="prev" aria-label="Previous Slide">&#10094;</button>
-      <button class="next" aria-label="Next Slide">&#10095;</button>
+      <div class="mySlides"><img src="assets/images/img3.png" alt="Safeguarding slide 1"></div>
+      <div class="mySlides"><img src="assets/images/img4.png" alt="Safeguarding slide 2"></div>
+      <div class="mySlides"><img src="assets/images/img2.png" alt="Safeguarding slide 3"></div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
     </div>
-
     <div class="dots-row" data-dots-for="hero">
-      <span class="dot" data-index="0"></span>
       <span class="dot" data-index="1"></span>
       <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
     </div>
   </section>
 
-  <!-- ====== WELCOME SECTION ====== -->
+  <!-- Welcome section in my home page -->
   <section class="welcome-section" id="about">
     <div class="container text-center">
       <h1>Welcome to <span>Safeguarding Awareness</span></h1>
-      <p>Safeguarding protects people’s health, well-being, and human rights — keeping them safe from harm, abuse, or
-        neglect.</p>
+      <p>Safeguarding is about protecting people’s health, well-being, and human rights to keep them safe from harm,
+        abuse, or neglect. It is especially important for children, young people, and vulnerable adults.
+        Safeguarding helps prevent abuse and creates safe, caring environments where everyone feels respected and
+        supported.
+        It builds trust by encouraging people to speak up if something is wrong and ensures that concerns are taken
+        seriously.
+        By promoting safety and well-being, safeguarding allows individuals to grow, learn, and live happily. Overall,
+        it reminds everyone to take responsibility for protecting others and helps build a safe and supportive
+        community.</p>
       <a class="btn-get-in-touch" href="#contact">Get in Touch</a>
     </div>
   </section>
 
-  <!-- ====== KEY INFORMATION ====== -->
-  <section id="key-info" class="key-info-section">
+  <!-- Key information -->
+  <section id="key-info" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Key Information</h2>
-      <p class="text-center mb-5">Learn to recognise, act, and report safeguarding concerns confidently.</p>
+      <h2 class="text-center mb-4">Key information</h2>
+
 
       <div class="row g-4">
+        <!--   -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title"><i class="fa-solid fa-eye text-primary"></i> What is Safeguarding?</h5>
-              <p class="card-text">Safeguarding means protecting people from harm, abuse, and neglect.</p>
+              <h5 class="card-title"></i> What is safegarding?</h5>
+              <p class="card-text"> Safeguarding means protecting people from harm, abuse, and neglect.</p>
               <button class="btn btn-outline-primary w-100" data-bs-toggle="collapse"
                 data-bs-target="#recognizeDetails">Learn More</button>
               <div id="recognizeDetails" class="collapse mt-3">
                 <ul>
-                  <li>Ensures safety, dignity, and well-being.</li>
-                  <li>Helps build trust and awareness.</li>
-                  <li>Applies to all, especially vulnerable groups.</li>
+                  <li>Safeguarding helps keep children, young people, and vulnerable adults safe from abuse and neglect.
+                  </li>
+                  <li>It ensures everyone feels secure, respected, and supported in their surroundings.</li>
+                  <li>Safeguarding helps individuals live, learn, and grow safely and confidently.
+
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
+        <!--   -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title"><i class="fa-solid fa-hand-holding-heart text-success"></i> Signs to Watch</h5>
-              <p class="card-text">Look for behavioural or physical signs that may indicate abuse or neglect.</p>
+              <h5 class="card-title"></i> Signs to watch</h5>
+              <p class="card-text">Be aware of signs that someone may be at risk. Recognising early warning signs can
+                save lives.</p>
               <button class="btn btn-outline-success w-100" data-bs-toggle="collapse"
                 data-bs-target="#respondDetails">Learn More</button>
               <div id="respondDetails" class="collapse mt-3">
                 <ul>
-                  <li>Unexplained injuries or emotional changes.</li>
-                  <li>Neglect, withdrawal, or fearfulness.</li>
-                  <li>Listen, observe, and act if concerned.</li>
+                  <li>Notice unexplained injuries or emotional withdrawal.</li>
+                  <li>Look for neglect, fear, or sudden behavior changes.</li>
+                  <li>Trust your instincts, if something feels wrong, act.</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
+        <!--   -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title"><i class="fa-solid fa-file-circle-check text-danger"></i> Reporting</h5>
-              <p class="card-text">Reporting concerns ensures trained professionals can act quickly to protect
-                individuals.</p>
+              <h5 class="card-title"></i>Action Steps</h5>
+              <p class="card-text">Reporting concerns ensures that trained professionals can provide protection and
+                support.</p>
               <button class="btn btn-outline-danger w-100" data-bs-toggle="collapse"
                 data-bs-target="#reportDetails">Learn More</button>
               <div id="reportDetails" class="collapse mt-3">
                 <ul>
-                  <li>Report immediately to your Safeguarding Lead.</li>
-                  <li>Document facts clearly and calmly.</li>
-                  <li>Contact emergency services if in danger.</li>
-                </ul>
+                  <li>*Contact your Designated Safeguarding Lead immediately.</li>
               </div>
             </div>
           </div>
@@ -120,20 +129,20 @@
     </div>
   </section>
 
-  <!-- ====== ACTION SECTION ====== -->
+  <!-- Take actions using list-->
   <section id="action" class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Take Action</h2>
       <ul class="list-group list-group-flush mx-auto" style="max-width:700px;">
-        <li class="list-group-item">Stay informed and complete safeguarding training regularly.</li>
-        <li class="list-group-item">Know your reporting policy and procedures.</li>
-        <li class="list-group-item">Encourage open conversations about safety.</li>
-        <li class="list-group-item">Be proactive — if in doubt, report it.</li>
+        <li class="list-group-item"> - Understand your safeguarding responsibilities.</li>
+        <li class="list-group-item"> - Stay up-to-date with safeguarding training.</li>
+        <li class="list-group-item"> - Follow the correct process for reporting incidents.</li>
+        <li class="list-group-item"> - Promote a culture of safety and awareness.</li>
       </ul>
     </div>
   </section>
 
-  <!-- ====== CONTACT SECTION ====== -->
+  <!-- contact us form to report a concern-->
   <section id="contact" class="contact-section py-5">
     <div class="container">
       <h2 class="text-center mb-4">Contact Us</h2>
@@ -157,12 +166,12 @@
     </div>
   </section>
 
-  <!-- ====== FOOTER ====== -->
+  <!-- Footer with easy links to each page (accessability) -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-column about">
         <h5>Safeguarding Awareness</h5>
-        <p>Working together to protect and empower communities across the UK.</p>
+        <p>Working together to protect and empower our communities.</p>
       </div>
       <div class="footer-column links">
         <h5>Quick Links</h5>
@@ -180,59 +189,41 @@
     <div class="footer-bottom">© 2025 Safeguarding Awareness | All Rights Reserved</div>
   </footer>
 
-  <!-- ====== JAVASCRIPT ====== -->
+  <!-- Script code for slideshow-->
   <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+      if (x.className === "topnav") { x.className += " responsive"; }
+      else { x.className = "topnav"; }
     }
 
+    // Slideshow logic
     class Slideshow {
       constructor(container) {
         this.container = container;
         this.slides = Array.from(container.querySelectorAll(".mySlides"));
         this.prev = container.querySelector(".prev");
         this.next = container.querySelector(".next");
-        this.dots = document.querySelectorAll(
-          `[data-dots-for="${container.dataset.slideshow}"] .dot`
-        );
         this.index = 0;
         this.interval = parseInt(container.dataset.interval) || 4000;
         this.timer = null;
         this.show(0);
         this.auto();
-
         if (this.prev) this.prev.addEventListener("click", () => this.show(this.index - 1));
         if (this.next) this.next.addEventListener("click", () => this.show(this.index + 1));
-        if (this.dots.length) {
-          this.dots.forEach((dot, i) =>
-            dot.addEventListener("click", () => this.show(i))
-          );
-        }
       }
-
       show(i) {
         if (!this.slides.length) return;
         this.index = (i + this.slides.length) % this.slides.length;
-        this.slides.forEach((s) => (s.style.display = "none"));
-        this.dots.forEach((d) => d.classList.remove("active"));
+        this.slides.forEach(s => s.style.display = "none");
         this.slides[this.index].style.display = "block";
-        this.dots[this.index]?.classList.add("active");
       }
-
       auto() {
         this.timer = setInterval(() => this.show(this.index + 1), this.interval);
       }
     }
-
     document.addEventListener("DOMContentLoaded", () => {
-      document
-        .querySelectorAll(".slideshow-container")
-        .forEach((s) => new Slideshow(s));
+      document.querySelectorAll(".slideshow-container").forEach(s => new Slideshow(s));
     });
   </script>
 
