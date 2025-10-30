@@ -1,14 +1,15 @@
-/* Reset + Navbar (from previous step) */
+/* Basic reset */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: #222;
+  font-family: Arial, sans-serif;
   background-color: #f6f9fb;
+  color: #222;
   line-height: 1.6;
 }
 
@@ -71,6 +72,44 @@ body {
   }
 }
 
+/* WELCOME/ABOUT SECTION */
+.welcome-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1d6b87, #137177);
+  color: #fff;
+}
+
+.welcome-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.welcome-section h1 span {
+  color: #ffda79;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+}
+
+.btn-get-in-touch {
+  padding: 12px 28px;
+  background-color: #ffda79;
+  color: #0a2239;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-get-in-touch:hover {
+  background-color: #ffe28a;
+  color: #000;
+}
+
 /* SLIDESHOW */
 .slideshow-container {
   position: relative;
@@ -110,4 +149,23 @@ body {
 
 .next {
   right: 12px;
+}
+
+.dots-row {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #bbb;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dot.active {
+  background: #137177;
 }
