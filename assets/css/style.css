@@ -207,3 +207,82 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
+
+/* ACTION / CALL-TO-ACTION SECTION */
+.action-section {
+  padding: 60px 20px;
+  background-color: #f0f4f2;
+  text-align: center;
+}
+
+.action-section h2 {
+  color: #0a2239;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.action-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.btn-action {
+  padding: 12px 28px;
+  background-color: #137177;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-action:hover {
+  background-color: #125b64;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #e7f3f0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #0a2239;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.btn-primary {
+  padding: 12px;
+  background-color: #137177;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #125b64;
+}
