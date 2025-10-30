@@ -15,6 +15,7 @@
     <a href="#home" class="active">Home</a>
     <a href="#about">About</a>
     <a href="#slideshow">Slideshow</a>
+    <a href="#key-info">Key Info</a>
     <a href="#contact">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
@@ -26,8 +27,6 @@
       <p>
         Safeguarding is about protecting people’s health, well-being, and human rights to keep them safe from harm,
         abuse, or neglect. It is especially important for children, young people, and vulnerable adults.
-        Safeguarding helps prevent abuse and creates safe, caring environments where everyone feels respected and
-        supported.
       </p>
       <a class="btn-get-in-touch" href="#contact">Get in Touch</a>
     </div>
@@ -35,27 +34,43 @@
 
   <!-- Slideshow Section -->
   <section class="slideshow-container" id="slideshow">
-    <div class="mySlides">
-      <img src="assets/images/slide1.jpg" alt="Slide 1">
-    </div>
-    <div class="mySlides">
-      <img src="assets/images/slide2.jpg" alt="Slide 2">
-    </div>
-    <div class="mySlides">
-      <img src="assets/images/slide3.jpg" alt="Slide 3">
-    </div>
+    <div class="mySlides"><img src="assets/images/slide1.jpg" alt="Slide 1"></div>
+    <div class="mySlides"><img src="assets/images/slide2.jpg" alt="Slide 2"></div>
+    <div class="mySlides"><img src="assets/images/slide3.jpg" alt="Slide 3"></div>
 
-    <!-- Next/prev buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </section>
 
-  <!-- Dots for slideshow -->
   <div class="dots-row">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
+
+  <!-- Key Information Section -->
+  <section id="key-info" class="key-info-section">
+    <div class="container text-center">
+      <h2>Key Information</h2>
+      <div class="cards-row">
+        <div class="card">
+          <h3 class="card-title">Child Safety</h3>
+          <p class="card-text">Ensure all children are in safe environments and protected from physical, emotional, and
+            online harm.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Reporting Abuse</h3>
+          <p class="card-text">Any suspected abuse should be reported immediately to designated safeguarding officers or
+            local authorities.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Support & Training</h3>
+          <p class="card-text">Regular safeguarding training and clear policies help everyone understand how to prevent
+            harm and support victims.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script>
     // Navbar responsive
@@ -68,22 +83,16 @@
     // Slideshow JS
     let slideIndex = 1;
     showSlides(slideIndex);
-
     function plusSlides(n) { showSlides(slideIndex += n); }
     function currentSlide(n) { showSlides(slideIndex = n); }
-
     function showSlides(n) {
       let i;
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("dot");
       if (n > slides.length) { slideIndex = 1; }
       if (n < 1) { slideIndex = slides.length; }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
+      for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+      for (i = 0; i < dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
     }

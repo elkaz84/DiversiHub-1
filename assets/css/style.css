@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Body styling */
 body {
   font-family: Arial, sans-serif;
   background-color: #f6f9fb;
@@ -168,4 +167,43 @@ body {
 
 .dot.active {
   background: #137177;
+}
+
+/* KEY INFO SECTION */
+.key-info-section {
+  padding: 80px 20px;
+  background-color: #f5f9ff;
+}
+
+.key-info-section h2 {
+  color: #0a2239;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #137177;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
 }
