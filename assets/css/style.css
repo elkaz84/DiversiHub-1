@@ -1,14 +1,13 @@
-/* Basic reset */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f6f9fb;
+  font-family: "Segoe UI", Arial, sans-serif;
   color: #222;
+  background-color: #f6f9fb;
   line-height: 1.6;
 }
 
@@ -71,45 +70,11 @@ body {
   }
 }
 
-/* WELCOME/ABOUT SECTION */
-.welcome-section {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #1d6b87, #137177);
-  color: #fff;
+/* HOME / SLIDESHOW */
+#home {
+  background-color: #eef6f8;
 }
 
-.welcome-section h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.welcome-section h1 span {
-  color: #ffda79;
-}
-
-.welcome-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #f2f2f2;
-}
-
-.btn-get-in-touch {
-  padding: 12px 28px;
-  background-color: #ffda79;
-  color: #0a2239;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn-get-in-touch:hover {
-  background-color: #ffe28a;
-  color: #000;
-}
-
-/* SLIDESHOW */
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -169,120 +134,105 @@ body {
   background: #137177;
 }
 
-/* KEY INFO SECTION */
-.key-info-section {
+/* WELCOME SECTION */
+.welcome-section {
+  text-align: center;
   padding: 80px 20px;
+  background: linear-gradient(135deg, #1d6b87, #137177);
+  color: #fff;
+}
+
+.welcome-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.welcome-section h1 span {
+  color: #ffda79;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+}
+
+.btn-get-in-touch {
+  padding: 12px 28px;
+  background-color: #ffda79;
+  color: #0a2239;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-get-in-touch:hover {
+  background-color: #ffe28a;
+  color: #000;
+}
+
+/* KEY INFO */
+#key-info {
   background-color: #f5f9ff;
 }
 
-.key-info-section h2 {
-  color: #0a2239;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
+/* Cards styled via Bootstrap and card classes */
 
-.cards-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-  color: #137177;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  color: #333;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* ACTION / CALL-TO-ACTION SECTION */
-.action-section {
-  padding: 60px 20px;
+/* ACTION SECTION */
+#action {
   background-color: #f0f4f2;
-  text-align: center;
-}
-
-.action-section h2 {
-  color: #0a2239;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.action-section p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  color: #222;
-}
-
-.btn-action {
-  padding: 12px 28px;
-  background-color: #137177;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
-}
-
-.btn-action:hover {
-  background-color: #125b64;
 }
 
 /* CONTACT SECTION */
-.contact-section {
-  padding: 60px 20px;
+#contact {
   background-color: #e7f3f0;
-  text-align: center;
 }
 
-.contact-section h2 {
-  color: #0a2239;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.contact-form textarea {
-  resize: none;
-}
-
-.btn-primary {
-  padding: 12px;
-  background-color: #137177;
+/* FOOTER */
+.footer {
+  background-color: #040425;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
+  padding: 40px 20px 20px;
 }
 
-.btn-primary:hover {
-  background-color: #125b64;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h5 {
+  color: #ffda79;
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+  color: #ffda79;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
 }
